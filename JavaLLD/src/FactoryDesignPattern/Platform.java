@@ -1,6 +1,6 @@
 package FactoryDesignPattern;
 
-public abstract class Platform  extends UIComponentFactory {
+public abstract class Platform {
     public void setRefreshRate(){
 
     }
@@ -12,6 +12,10 @@ public abstract class Platform  extends UIComponentFactory {
 
     public abstract UIComponentFactory createUIComponentFactory();
 
+
+    public static Platform createPlatform(String platformName){
+        return PlatformFactory.getPlatform(platformName);
+    }
 
 
 

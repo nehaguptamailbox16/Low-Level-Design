@@ -1,10 +1,11 @@
 package FactoryDesignPattern.component.dropdown;
 
 
-public abstract IOSDropDown extends DropDonw {
+public class  IOSDropDown extends DropDown{
+
 
     @Override
-    public  void menu(){
+    public void menu() {
 
     }
 }
