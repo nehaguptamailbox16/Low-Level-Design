@@ -13,6 +13,7 @@ public class Student {
     static int getNoOfStudent(){
         // not static member or function is not allowed in static function;
         //age = 20;
+        //this.age = 10;  "this" keyword not allowed in static function
         return noOfStudent;
     }
 }
