@@ -1,0 +1,21 @@
+package Concurrency.AdderSubtractor.V3Atomic;
+
+import java.util.concurrent.Callable;
+
+public class Adder implements Callable<Void> {
+
+    private Value v;
+
+    Adder(Value x){
+
+        v = x;
+    }
+
+    @Override
+    public Void call (){
+        for(int i = 1;i <=5000; i++){
+            this.v.num.addAndGet(1);
+        }
+        return null;
+    }
+}
